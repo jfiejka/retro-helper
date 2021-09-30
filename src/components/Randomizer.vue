@@ -52,7 +52,7 @@ const randomize = () => {
   let splitCounter = 0;
 
   while (temp.length) {
-    const el = temp.splice(random(temp.length - 1), 1)[0];
+    const el = temp.splice(temp.length - 1, 1)[0];
     split[splitCounter].people.push(el);
     splitCounter = splitCounter === split.length - 1 ? 0 : splitCounter + 1;
   }
